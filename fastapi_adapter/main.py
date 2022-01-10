@@ -9,6 +9,8 @@ from fastapi.responses import JSONResponse
 
 from .routes import *
 
+from .controller import WhatsAppController
+
 common_responses = {
     501: {"description": "The requested controller has not been implemented"}
 }
@@ -41,10 +43,8 @@ async def default_exception_handler(request: Request, exc: HTTPException):
     )
 
 
-controller = Controller()
+controller = WhatsAppController()
 
 configure_routes__downloadMedia_media_id(app, controller)
-
 configure_routes__sendMessage(app, controller)
-
 configure_routes__uploadMedia(app, controller)

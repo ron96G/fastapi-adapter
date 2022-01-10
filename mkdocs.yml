@@ -7,8 +7,11 @@ theme:
       primary: 'light blue'
       accent: 'light blue'
 markdown_extensions:
-  - codehilite
-  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - toc:
       permalink: 🔗
 
@@ -21,3 +24,4 @@ nav:
 
 plugins:
   - search
+  - pdf-export
