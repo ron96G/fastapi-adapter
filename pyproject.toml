@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fastapi-adapter"
+version = "0.1.0"
+description = ""
+authors = ["Ron Gummich <ron.gummich@telekom.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.71.0"
+whatsapp-business-api-client = "^1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.12b0"
+isort = "^5.10.1"
+mypy = "^0.931"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+generate_fastapi = "scripts.openapi:generate_fastapi"
+generate_model = "scripts.openapi:generate_models"
+mock = "scripts.dev:mock"
+dev = "scripts.dev:start"

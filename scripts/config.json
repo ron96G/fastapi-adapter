@@ -1,0 +1,53 @@
+{
+  "version": "2.35.2",
+  "status": "mocked",
+  "contacts": [
+    {
+      "id": "491701223123",
+      "name": "Peter L."
+    },
+    {
+      "id": "491701223124",
+      "name": "Markus M."
+    },
+    {
+      "id": "491701223125",
+      "name": "Olaf"
+    },
+    {
+      "id": "491701223126",
+      "name": "Gerald R."
+    },
+    {
+      "id": "491701223127",
+      "name": "Michel"
+    }
+  ],
+  "uploadDir": "/home/app/data/",
+  "users": {
+    "admin": "secret"
+  },
+  "inboundMedia": {
+    "audio": "audio",
+    "document": "document",
+    "image": "image",
+    "video": "video"
+  },
+  "applicationSettings": {
+    "media": {
+      "auto_download": [
+      ]
+    },
+    "webhooks": {
+      "max_concurrent_requests": 8
+    }
+  },
+  "profileAbout": {
+
+  },
+  "businessProfile": {
+
+  },
+  "tokens": [
+  ]
+}

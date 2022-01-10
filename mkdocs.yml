@@ -1,0 +1,23 @@
+site_name: fastapi-adapter
+site_description: This is the POC of an API-adapter implemented in FastAPI using Openapi specification.
+
+theme:
+    name: 'material'
+    palette:
+      primary: 'light blue'
+      accent: 'light blue'
+markdown_extensions:
+  - codehilite
+  - admonition
+  - toc:
+      permalink: 🔗
+
+repo_name: https://github.com/ron96G/fastapi-adapter
+repo_url: https://github.com/ron96G/fastapi-adapter
+site_url: https://github.com/ron96G/fastapi-adapter
+
+nav:
+    - Overview: index.md
+
+plugins:
+  - search
