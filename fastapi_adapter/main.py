@@ -7,9 +7,8 @@ from __future__ import annotations
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 
-from .routes import *
-
 from .controller import WhatsAppController
+from .routes import *
 
 common_responses = {
     501: {"description": "The requested controller has not been implemented"}

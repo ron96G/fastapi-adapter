@@ -33,7 +33,9 @@ class Controller:
         raise NotImplementedException()
 
 
-def configure_routes__downloadMedia_media_id(app: FastAPI, controller: Controller) -> None:
+def configure_routes__downloadMedia_media_id(
+    app: FastAPI, controller: Controller
+) -> None:
     @app.get(
         "/downloadMedia/{media_id}",
         response_model=bytes,
